@@ -28,27 +28,36 @@ namespace StupidHackerRankQuestions
          * The function accepts INTEGER_ARRAY arr as parameter.
          */
 
+
+
+
+        /*
+         * Complete the 'miniMaxSum' function below.
+         *
+         * The function accepts INTEGER_ARRAY arr as parameter.
+         */
+
         public static void miniMaxSum(List<int> arr)
         {
-            long[] myArray;
+            ulong[] myArray;
             int arrayLengthio;
-            List<long> arrLong = arr.ConvertAll(i => (long)i);
+            List<ulong> arrLong = arr.ConvertAll(i => (ulong)i);
             myArray = arrLong.ToArray();
             arrayLengthio = myArray.Length;
 
-            long smallestNumber = myArray[0];
-            long biggestNumber = myArray[0];
-            long total = 0;
+            ulong smallestNumber = myArray[0];
+            ulong biggestNumber = myArray[0];
+            ulong total = 0;
 
-            for (int i = 0; i < arrayLengthio - 1; i++)
+            for (int i = 0; i < arrayLengthio; i++)
             {
-                if (myArray[i] > myArray[i + 1])
+                if (smallestNumber > myArray[i])
                 {
-                    smallestNumber = myArray[i + 1];
+                    smallestNumber = myArray[i];
                 }
-                else
+                if (biggestNumber < myArray[i])
                 {
-                    biggestNumber = myArray[i + 1];
+                    biggestNumber = myArray[i];
                 }
 
             }
@@ -58,12 +67,14 @@ namespace StupidHackerRankQuestions
                 total = total + myArray[z];
             }
 
-            Console.WriteLine((total - smallestNumber) + " " + (total - biggestNumber));
+            Console.WriteLine((total - biggestNumber) + " " + (total - smallestNumber));
 
 
         }
+
     }
 }
+
 
 
 //Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.

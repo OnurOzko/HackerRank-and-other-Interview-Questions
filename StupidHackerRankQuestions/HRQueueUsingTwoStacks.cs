@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System;
-using System.Collections.Generic;
 using System.IO;
 
 namespace StupidHackerRankQuestions
@@ -19,9 +17,7 @@ namespace StupidHackerRankQuestions
             int length = Int32.Parse(strLength);
             string[] myArr = new string[length];
             //int total = 0;
-            int temp = 0;
             string tempStr;
-            int lastElementIndex = 0;
             int firstElementIndex = 0;
 
             for (int i = 0; i < length; i++)
