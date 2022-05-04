@@ -48,7 +48,9 @@
     <Compile Include="HRDiagonalDifferences.cs" />
     <Compile Include="HRJumpingontheClouds.cs" />
     <Compile Include="HRMinimumBribe.cs" />
+    <Compile Include="HRPairs.cs" />
     <Compile Include="HRQueueUsingTwoStacks.cs" />
+    <Compile Include="HRTextEditor.cs" />
     <Compile Include="HRTruckTour.cs" />
     <Compile Include="HRWeirdBracketQuestion.cs" />
     <Compile Include="JIDivideForProduction.cs" />
