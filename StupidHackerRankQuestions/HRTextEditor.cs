@@ -8,73 +8,114 @@ namespace StupidHackerRankQuestions
 {
     internal class HRTextEditor
     {
-        static void Main(String[] args)
-        { //10 / 15 (5 due to timeout)
+
+        static void Main(string[] args) {
             /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
-            List<string> pastDeeds = new List<string>();
-            int k = Int32.Parse(Console.ReadLine());
-            string input;
-            string output = "";
-            string tempInput;
-            string tempInput2;
+            var numOfOperations = int.Parse(Console.ReadLine());
+            var s = new StringBuilder();
+            var sbOutput = new StringBuilder();
+            var stringStack = new Stack<string>();
 
-            for (int i = 0; i < k; i++)
+            for (int i = 0; i < numOfOperations; i++)
             {
-                input = Console.ReadLine();
-                tempInput = input.Split(' ')[0];
-
-                switch (tempInput)
+                string[] arr = Console.ReadLine().Split(' ');
+                string command = arr[0];
+                if (command == "1")
                 {
-                    case "1":
-                        pastDeeds.Add(output);
-                        tempInput2 = input.Split(' ')[1];
-                        output = Appendo(output, tempInput2);
-                        break;
-                    case "2":
-                        pastDeeds.Add(output);
-                        tempInput2 = input.Split(' ')[1];
-                        output = Deleto(output, Int32.Parse(tempInput2));
-                        break;
-                    case "3":
-                        tempInput2 = input.Split(' ')[1];
-                        Printo(output, Int32.Parse(tempInput2));
-                        break;
-                    case "4":
-                        output = pastDeeds[pastDeeds.Count - 1];
-                        pastDeeds.RemoveAt(pastDeeds.Count - 1);
-                        break;
+                    stringStack.Push(s.ToString());
+                    s.Append(arr[1]);
+                }
+                else if (command == "2")
+                {
+                    stringStack.Push(s.ToString());
+                    var k = int.Parse(arr[1]);
+                    s.Remove(s.Length - k, k);
+                }
+                else if (command == "3")
+                {
+                    var k = int.Parse(arr[1]);
+                    sbOutput.Append(s[k - 1] + "\n");
+                }
+                else if (command == "4")
+                {
+                    s = new StringBuilder(stringStack.Pop());
                 }
             }
+
+            Console.Write(sbOutput.ToString());
+
+
+
         }
 
 
-        public static string Appendo(string s, string w)
-        {
-            s = s + w;
-            return s;
-        }
-        public static string Deleto(string s, int k)
-        {
-            s = s.Substring(0, (s.Length - k));
-            return s;
-        }
+        //static void Main(String[] args)
+        //{ //10 / 15 (5 due to timeout)
+        //    /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
+        //    List<string> pastDeeds = new List<string>();
+        //    int k = Int32.Parse(Console.ReadLine());
+        //    string input;
+        //    string output = "";
+        //    string tempInput;
+        //    string tempInput2;
 
-        public static void Printo(string s, int k)
-        {
-            if (s.Length == 1)
-            {
-                Console.WriteLine(s);
-            }
-            else if (s.Length > 0)
-            {
-                char c = s[k - 1];
-                Console.WriteLine(c);
-            }
-            else
-            {
-                Console.WriteLine();
-            }
-        }
+        //    for (int i = 0; i < k; i++)
+        //    {
+        //        input = Console.ReadLine();
+        //        tempInput = input.Split(' ')[0];
+
+        //        switch (tempInput)
+        //        {
+        //            case "1":
+        //                pastDeeds.Add(output);
+        //                tempInput2 = input.Split(' ')[1];
+        //                output = Appendo(output, tempInput2);
+        //                break;
+        //            case "2":
+        //                pastDeeds.Add(output);
+        //                tempInput2 = input.Split(' ')[1];
+        //                output = Deleto(output, Int32.Parse(tempInput2));
+        //                break;
+        //            case "3":
+        //                tempInput2 = input.Split(' ')[1];
+        //                Printo(output, Int32.Parse(tempInput2));
+        //                break;
+        //            case "4":
+        //                output = pastDeeds[pastDeeds.Count - 1];
+        //                pastDeeds.RemoveAt(pastDeeds.Count - 1);
+        //                break;
+        //        }
+        //    }
+        //}
+
+
+        //public static string Appendo(string s, string w)
+        //{
+        //    s = s + w;
+        //    return s;
+        //}
+        //public static string Deleto(string s, int k)
+        //{
+        //    s = s.Substring(0, (s.Length - k));
+        //    return s;
+        //}
+
+        //public static void Printo(string s, int k)
+        //{
+        //    if (s.Length == 1)
+        //    {
+        //        Console.WriteLine(s);
+        //    }
+        //    else if (s.Length > 0)
+        //    {
+        //        char c = s[k - 1];
+        //        Console.WriteLine(c);
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine();
+        //    }
+        //}
     }
 }
 
