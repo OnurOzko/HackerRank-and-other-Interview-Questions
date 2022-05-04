@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StupidHackerRankQuestions", "StupidHackerRankQuestions\StupidHackerRankQuestions.csproj", "{99A2645F-9D8D-475F-AFBE-EF402C4BBF3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamplesOnHRandOtherPages", "StupidHackerRankQuestions\ExamplesOnHRandOtherPages.csproj", "{99A2645F-9D8D-475F-AFBE-EF402C4BBF3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

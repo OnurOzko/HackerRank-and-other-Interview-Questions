@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StupidHackerRankQuestions
+namespace AlgorihmQuestions
 {
-    internal class JOBINTERVIEWSumOfEveryThree
+    internal class JISumOfEveryThree
     {
         //public int solution(int[] A)  sadly I couldn't finish this question in time
         //{

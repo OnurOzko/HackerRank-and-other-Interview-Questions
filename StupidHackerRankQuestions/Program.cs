@@ -13,8 +13,11 @@ using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 
 
-namespace StupidHackerRankQuestions
+namespace AlgorihmQuestions
 {
+    /// <summary>
+    /// Going to make it possible to run every example from here later on.
+    /// </summary>
     internal class Program
     {
         static void Main(string[] args)

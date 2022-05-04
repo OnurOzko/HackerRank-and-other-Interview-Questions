@@ -47,10 +47,11 @@
     <Compile Include="HRCountingSort.cs" />
     <Compile Include="HRDiagonalDifferences.cs" />
     <Compile Include="HRJumpingontheClouds.cs" />
-    <Compile Include="HRMinimumBribe%28EXTREMELYHARD%29.cs" />
+    <Compile Include="HRMinimumBribe.cs" />
     <Compile Include="HRQueueUsingTwoStacks.cs" />
     <Compile Include="HRTruckTour.cs" />
-    <Compile Include="JOBINTERVIEWDivideForProduction.cs" />
+    <Compile Include="HRWeirdBracketQuestion.cs" />
+    <Compile Include="JIDivideForProduction.cs" />
     <Compile Include="HRFindMedian.cs" />
     <Compile Include="HRFindMissingInt.cs" />
     <Compile Include="HRGridChallengeQuestion.cs" />
@@ -64,7 +65,7 @@
     <Compile Include="HRPlusMinus.cs" />
     <Compile Include="HRMinMaxSum.cs" />
     <Compile Include="HRHourStyleConvert.cs" />
-    <Compile Include="JOBINTERVIEWSumOfEveryThree.cs" />
+    <Compile Include="JISumOfEveryThree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

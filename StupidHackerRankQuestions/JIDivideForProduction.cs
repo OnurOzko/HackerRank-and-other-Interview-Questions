@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StupidHackerRankQuestions
+namespace AlgorihmQuestions
 {
-    internal class JOBINTERVIEWDivideForProduction
+    internal class JIDivideForProduction
     {
 
         // you can also use other imports, for example:

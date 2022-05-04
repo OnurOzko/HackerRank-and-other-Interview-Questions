@@ -14,7 +14,7 @@ using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 
 
-namespace StupidHackerRankQuestions
+namespace AlgorihmQuestions
 {
     class HRHourStyleConvert
     {
