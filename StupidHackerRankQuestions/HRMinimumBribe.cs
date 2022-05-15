@@ -48,18 +48,18 @@ namespace AlgorihmQuestions
             Console.WriteLine(count);
         }
 
-        class Solution
-        {
-            public static void Main(string[] args)
-            {
-                int t = Convert.ToInt32(Console.ReadLine().Trim());
-                for (int tItr = 0; tItr < t; tItr++)
-                {
-                    int n = Convert.ToInt32(Console.ReadLine().Trim()); // unnecessary but needed
-                    List<int> q = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(qTemp => Convert.ToInt32(qTemp)).ToList();
-                    HRMinimumBribe.minimumBribes(q);
-                }
-            }
-        }
+        //class Solution
+        //{
+        //    public static void Main(string[] args)
+        //    {
+        //        int t = Convert.ToInt32(Console.ReadLine().Trim());
+        //        for (int tItr = 0; tItr < t; tItr++)
+        //        {
+        //            int n = Convert.ToInt32(Console.ReadLine().Trim()); // unnecessary but needed
+        //            List<int> q = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(qTemp => Convert.ToInt32(qTemp)).ToList();
+        //            HRMinimumBribe.minimumBribes(q);
+        //        }
+        //    }
+        //}
     }
 }

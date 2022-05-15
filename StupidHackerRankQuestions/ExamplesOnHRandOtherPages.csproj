@@ -47,6 +47,7 @@
     <Compile Include="HRCountingSort.cs" />
     <Compile Include="HRDiagonalDifferences.cs" />
     <Compile Include="HRJumpingontheClouds.cs" />
+    <Compile Include="HRLegoBlocks.cs" />
     <Compile Include="HRMinimumBribe.cs" />
     <Compile Include="HRPairs.cs" />
     <Compile Include="HRQueueUsingTwoStacks.cs" />

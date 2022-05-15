@@ -9,7 +9,7 @@ namespace StupidHackerRankQuestions
     internal class HRTextEditor
     {
 
-        static void Main(string[] args) {
+        static void TextEditor(string[] args) {
             /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
             var numOfOperations = int.Parse(Console.ReadLine());
             var s = new StringBuilder();

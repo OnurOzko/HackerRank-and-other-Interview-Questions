@@ -75,31 +75,31 @@ class HRLegoBlocks //it is an extremely hard question and algorithm. I copied th
     }
 }
 
-class Solution
-{
-    public static void Main(string[] args)
-    {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+//class Solution
+//{
+//    public static void Main(string[] args)
+//    {
+//        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
-        int t = Convert.ToInt32(Console.ReadLine().Trim());
+//        int t = Convert.ToInt32(Console.ReadLine().Trim());
 
-        for (int tItr = 0; tItr < t; tItr++)
-        {
-            string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+//        for (int tItr = 0; tItr < t; tItr++)
+//        {
+//            string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
 
-            int n = Convert.ToInt32(firstMultipleInput[0]);
+//            int n = Convert.ToInt32(firstMultipleInput[0]);
 
-            int m = Convert.ToInt32(firstMultipleInput[1]);
+//            int m = Convert.ToInt32(firstMultipleInput[1]);
 
-            int result = HRLegoBlocks.legoBlocks(n, m);
+//            int result = HRLegoBlocks.legoBlocks(n, m);
 
-            textWriter.WriteLine(result);
-        }
+//            textWriter.WriteLine(result);
+//        }
 
-        textWriter.Flush();
-        textWriter.Close();
-    }
-}
+//        textWriter.Flush();
+//        textWriter.Close();
+//    }
+//}
 
 
 
