@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace AlgorihmQuestions
 {
-    internal class HRCountingSort
+    class HRCountingSort
     {
 
-        public List<int> firstStepofCountingSort(List<int> arr)
+        static public List<int> firstStepofCountingSort(List<int> arr)
         {
             int[] occurences = new int[100];
             foreach (var item in arr)

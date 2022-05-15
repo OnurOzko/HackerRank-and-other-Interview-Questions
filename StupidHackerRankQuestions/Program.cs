@@ -24,8 +24,10 @@ namespace AlgorihmQuestions
         {
             int menuOption = 0;
             int menuInt = 0;
+            int menuInt2 = 0;
             bool correctInput = false;
             string menuString;
+            List<int> inputListInt = new List<int>();
 
             while (true)
             {
@@ -51,20 +53,34 @@ namespace AlgorihmQuestions
                         menuInt = Int32.Parse(Console.ReadLine());
                         for(int i = 0; i < menuInt; i++)
                         {
+                            correctInput = false;
                             while(correctInput == false)
                             {
                                 Console.WriteLine("Please enter a number");
-                                correctInput = int.TryParse(Console.ReadLine(), out menuInt);
+                                correctInput = int.TryParse(Console.ReadLine(), out menuInt2);
 
                                 if (!correctInput)
                                 {
                                     Console.Write("Your input was not a number.");
                                 }
+                                else
+                                {
+                                    inputListInt.Add(menuInt2);
+                                }
                             }
 
                         }
+                        inputListInt = HRCountingSort.firstStepofCountingSort(inputListInt);
+                        foreach (int a in inputListInt)
+                        {
+                            Console.Write(a);
+                        }
+                        Console.WriteLine("End of Results.");
                         break;
 
+                    default:
+                        Console.WriteLine("Invalid input.");
+                        break;
 
                 }
             }
